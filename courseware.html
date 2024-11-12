@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courseware | Improve IT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header #branding img {
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #courses .course {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        #courses .course h2 {
+            color: #50b3a2;
+        }
+        #courses .course p {
+            font-size: 16px;
+        }
+        .button {
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+            background: #e8491d;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background: #50b3a2;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            width: 100%;
+        }
+        footer p {
+            font-size: 14px;
+        }
+        .gwc-icon {
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .gwc-icon:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Improve</span> IT
+                    <img src="IT.png" alt="IT Icon"> <!-- IT icon image -->
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home3.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="courseware.html">Courseware</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><img src="gwc.jpg" alt="GWC" class="gwc-icon" onclick="goToRegisterPage()"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="courses">
+        <div class="container">
+            <h1>Available Courses</h1>
+            <div class="course">
+                <h2>HTML</h2>
+                <p>Learn the foundation of web development with HTML. Understand how to structure web pages and add content.</p>
+                <a href="register.html" class="button">Register</a>
+            </div>
+            <div class="course">
+                <h2>CSS</h2>
+                <p>Master CSS to style your websites and make them visually appealing. Learn about selectors, properties, and values.</p>
+                <a href="register.html" class="button">Register</a>
+            </div>
+            <div class="course">
+                <h2>JavaScript</h2>
+                <p>Explore JavaScript to add interactivity to your web applications. Learn about variables, functions, and DOM manipulation.</p>
+                <a href="register.html" class="button">Register</a>
+            </div>
+            <div class="course">
+                <h2>Python</h2>
+                <p>Discover Python, a versatile language used in web development, data science, and more. Learn about Python syntax and libraries.</p>
+                <a href="register.html" class="button">Register</a>
+            </div>
+            <div class="course">
+                <h2>C++</h2>
+                <p>Dive into C++ for system programming, game development, and performance-critical applications. Learn about object-oriented programming and advanced C++ features.</p>
+                <a href="register.html" class="button">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>copyright©Improve IT</p>
+        <p>+61 1111111111</p>
+        <p>email 123456789@qq.com</p>
+    </footer>
+
+    <script>
+        function goToRegisterPage() {
+            window.location.href = 'register.html';
+        }
+    </script>
+</body>
+</html>

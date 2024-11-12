@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase | Improve IT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header #branding img {
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .showcase-item {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .showcase-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            width: 100%;
+        }
+        footer p {
+            font-size: 14px;
+        }
+        .gwc-icon {
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .gwc-icon:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Improve</span> IT
+                    <img src="IT.png" alt="IT Icon"> <!-- IT icon image -->
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home3.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courseware.html">Courseware</a></li>
+                    <li class="current"><a href="showcase.html">Showcase</a></li>
+                    <li><img src="gwc.jpg" alt="GWC" class="gwc-icon" onclick="goToRegisterPage()"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <div class="showcase-item">
+                <img src="j1.webp" alt="First Prize">
+                <h3>First Prize</h3>
+                <p>Northwestern Polytechnical University Guidance Group, Zhengxiong Hou, Xiaofeng Yang, Yuhao Yang, Zeyou Liu, Yikun Wang, Fengshuo Qiu</p>
+                <p>ASC STUDENT SUPERCOMPUTER CHALLENGE 2021 SHENZHEN,CHINA</p>
+            </div>
+            <div class="showcase-item">
+                <img src="j2.webp" alt="Meritorious Winner">
+                <h3>Meritorious Winner</h3>
+                <p>Mathematical Contest In Modeling Certificate of Achievement</p>
+                <p>The Team Of Biling Lu, Jiayi Liu, Jiayin Wang</p>
+                <p>With Faculty Advisor Xiaoyan Wang, Beijing Wuzi University</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>copyright©Improve IT</p>
+        <p>+61 1111111111</p>
+        <p>email 123456789@qq.com</p>
+    </footer>
+
+    <script>
+        function goToRegisterPage() {
+            window.location.href = 'register.html';
+        }
+    </script>
+</body>
+</html>

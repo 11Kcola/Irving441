@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Improve IT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+            display: flex;
+            flex-direction: column; /* Stacks the header, content, and footer vertically */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header #branding img {
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+            margin-left: 10px; /* Space between the icon and the text */
+            vertical-align: middle; /* Align the icon with the text */
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Push the footer to the bottom */
+            width: 100%;
+        }
+        footer p {
+            font-size: 14px;
+        }
+        /* Add styles for the GWC icon */
+        .gwc-icon {
+            width: 50px; /* Adjust the size as needed */
+            height: auto;
+            margin-left: 10px; /* Space between the icon and the text */
+            cursor: pointer;
+        }
+        .gwc-icon:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Improve</span> IT
+                    <img src="IT.png" alt="IT Icon"> <!-- IT icon image -->
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home3.html">Home</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="courseware.html">Courseware</a></li> 
+                    <li><a href="showcase.html">Showcase</a></li> 
+                    <li><img src="gwc.jpg" alt="GWC" class="gwc-icon" onclick="goToRegisterPage()"></li> <!-- GWC icon with onclick event -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Welcome to Improve IT, a leading Information Technology (IT) training institution in Australia. We are dedicated to providing high-quality education and training resources aimed at cultivating professional talents in the technology field. As a Registered Training Organization (RTO), we have a unique advantage, offering not only registration services for 5 IT courses for students but also providing 8 training resource kits for other RTOs to order.</p>
+        <p>Our courses cover the latest IT skills and knowledge, including but not limited to professional courses like ICT60220. Our goal is to help students and institutions enhance their technical levels and adapt to the rapidly changing technological environment through our courses and resources.</p>
+        <p>At Improve IT, we believe that continuous development and innovation are at the core of education. Our "About Us" page not only showcases the latest developments of our school but also reflects our commitment to educational quality. Our team consists of experienced education experts and industry professionals who are dedicated to providing the latest course content, assessment requirements, and practical project cases to ensure our courses are in sync with industry demands.</p>
+        <p>Our students and partners can access course details, assessment requirements, and sample projects through our dynamic website. Additionally, we provide an online registration form for potential students to easily enroll in our IT courses. For other RTOs, our website offers a courseware page where they can conveniently order the training resource kits they need.</p>
+        <p>We are committed to providing an interactive and dynamic learning environment. Our website features include animated transitions, a shopping cart, a registration form with at least 6 fields, and responsive design to adapt to different screen sizes. Our goal is to ensure that our website is not only visually appealing and well-organized but also has clean code, ample comments, and follows best practices.</p>
+        <p>Thank you for choosing Improve IT as your education and training partner. We look forward to embarking on a technological journey with you.</p>
+    </div>
+
+    <footer>
+        <p>copyright©Improve IT</p>
+        <p>+61 1111111111</p>
+        <p>email 123456789@qq.com</p>
+    </footer>
+
+    <script>
+        // JavaScript function to handle the onclick event of the GWC icon
+        function goToRegisterPage() {
+            // This function will be executed when the GWC icon is clicked
+            // Add the logic to redirect to the registration page or perform the desired action
+            window.location.href = 'register.html'; // Redirect to the registration page
+        }
+    </script>
+</body>
+</html>

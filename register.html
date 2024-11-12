@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Irving</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Create Account</h1>
+    <h2>I am Irving</h2>
+
+    <!-- Add a button to navigate to the Login page -->
+    <button onclick="goToLoginPage()">Go to Login Page</button>
+
+    <form id="registerForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <footer>
+        <p>copyright©Improve IT</p>
+        <p>Contact Number: +61 1111111111</p>
+        <p>Email: 123456789@qq.com</p>
+    </footer>
+
+    <script>
+        // Function to set a cookie with a specified name, value, and expiration days
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+        }
+
+        // Event handler for the form submission
+        document.getElementById("registerForm").onsubmit = function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Set cookies for username and password
+            setCookie("username", username, 1); // Cookie expires in 1 day
+            setCookie("password", password, 1); // Cookie expires in 1 day
+
+            alert("Account created! Cookies set.");
+            window.location.href = 'login.html'; // Redirect to the login page
+        };
+
+        // Function to navigate to the login page
+        function goToLoginPage() {
+            window.location.href = 'login.html'; // Redirect to the login page
+        }
+    </script>
+
+</body>
+</html>
